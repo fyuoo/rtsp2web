@@ -1,0 +1,17 @@
+{
+  "name": "transcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transcode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "querystring": "^0.2.1",
+    "url": "^0.11.3",
+    "ws": "^8.14.2"
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,viewport-fit=cover"
+    />
+    <script src="./jsmpeg.min.js" charset="utf-8"></script>
+    <title>rtsp player</title>
+  </head>
+  <body>
+    <canvas id="canvas" style="width: 600px; height: 600px"></canvas>
+  </body>
+  <script>
+    var rtsp = "rtsp://user:passwrod@ip:port/cam/realmonitor?channel=1&subtype=0";
+    window.onload = () => {
+      new JSMpeg.Player("ws://localhost:9999/rtsp?url=" + rtsp, {
+        canvas: document.getElementById("canvas"),
+      });
+    };
+  </script>
+</html>
